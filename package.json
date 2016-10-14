@@ -1,0 +1,23 @@
+{
+  "name": "hangman",
+  "version": "1.0.0",
+  "description": "",
+  "main": "main.js",
+  "dependencies": {
+    "inquirer": "^1.2.1"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/KevinAngeles/Week11-Hangman.git"
+  },
+  "author": "Kevin Angeles",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/KevinAngeles/Week11-Hangman/issues"
+  },
+  "homepage": "https://github.com/KevinAngeles/Week11-Hangman#readme"
+}

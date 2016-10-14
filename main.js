@@ -86,7 +86,6 @@ function play()
 						{
 							game.currentWord = game.currentWord + "_";
 						}
-
 					}
 					
 					console.log('Correct character!');
@@ -97,7 +96,7 @@ function play()
 					for( var i = 0; i < game.selectedWord.length; i++ )
 					{
 						//if is not a number or letter
-						//or character had already been guessed and it is part of the selected song name  
+						//or character had already been guessed and it is part of the selected word
 						if( !game.allowedCharacters.test(game.selectedWord[i]) || (game.charsGuessed.indexOf(game.selectedWord[i].toLowerCase()) > -1) )
 						{
 							game.currentWord = game.currentWord + game.selectedWord[i];
@@ -121,12 +120,16 @@ function play()
 				}
 				//add the new character to the array of characters already guessed
 				game.charsGuessed.push(userKey);
-				//if you finally guessed the complete song name
+				//if you finally guessed the word
 				if( removeSpaces(game.currentWord.toLowerCase()) === removeSpaces(game.selectedWord.toLowerCase()) )
 				{
 					console.log("Congratulations, you win!");
 					game.finished = true;
 				}
+			}
+			else
+			{
+				console.log("character already guessed").
 			}
 
 			console.log("currentWord: " + game.currentWord);
